@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <nav class="game-nav">
+        <div class="nav-container">
+            <a href="#about" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <span>ABOUT</span>
+            </a>
+            <a href="#projects" class="nav-item">
+                <div class="nav-icon">💻</div>
+                <span>PROJECTS</span>
+            </a>
+            <a href="#skills" class="nav-item">
+                <div class="nav-icon">⚔️</div>
+                <span>SKILLS</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <div class="nav-icon">📧</div>
+                <span>CONTACT</span>
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <!-- Image background container -->
+        <div class="background-container">
+            <img src="assets/hero.png" alt="Pixel art workspace" id="hero-image">
+            <!-- Overlay for the dark shade -->
+            <div class="overlay"></div>
+            <div class="scanline"></div>
+            <div class="noise"></div>
+        </div>
+        <!-- Hero content -->
+        <div class="hero-content">
+            <h1 class="hero-text pixel-border">
+                Hello, I'm<br><span id="typed-text"> </span>
+            </h1>
+        </div>
+        <div class="hero-prompt">
+            <span class="key">SPACE</span>
+            <span>PRESS TO CONTINUE</span>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <!-- Main Profile Card -->
+            <div class="profile-card">
+                <!-- Left Column -->
+                <div class="profile-left">
+                    <!-- Profile Image -->
+                    <div class="profile-image-container">
+                        <img src="assets/me.png" alt="Arian's Profile Picture" class="profile-image">
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Available for Projects</span>
+                        </div>
+                    </div>
+
+                    <!-- Basic Info -->
+                    <div class="basic-info">
+                        <h1 class="profile-name">Arian</h1>
+                        <p class="profile-title">Full-Stack Developer</p>
+                        <p class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Lyon, France
+                        </p>
+                    </div>
+
+                    <!-- Contact Links -->
+                    <div class="quick-links">
+                        <a href="#contact" class="quick-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                        <a href="#projects" class="quick-link">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="profile-right">
+                    <!-- About Me -->
+                    <div class="about-section">
+                        <h2 class="section-heading">About Me</h2>
+                        <p class="about-text">
+                            A passionate full-stack developer with a focus on creating innovative web solutions.
+                            I specialize in building responsive and interactive applications that provide exceptional
+                            user experiences.
+                        </p>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="skills-section">
+                        <h2 class="section-heading">Technical Skills</h2>
+                        <div class="skills-container">
+                            <div class="skill-category">
+                                <h3 class="category-title">Frontend</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="95">
+                                        <i class="fab fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="skill-item" data-level="95">
+                                        <i class="fab fa-html5"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3 class="category-title">Backend</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="85">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <i class="fab fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <i class="fas fa-database"></i>
+                                        <span>SQL</span>
+                                    </div>
+                                    <div class="skill-item" data-level="80">
+                                        <i class="fas fa-server"></i>
+                                        <span>APIs</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3 class="category-title">Tools</h3>
+                                <div class="skill-items">
+                                    <div class="skill-item" data-level="92">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="skill-item" data-level="85">
+                                        <i class="fab fa-docker"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                    <div class="skill-item" data-level="88">
+                                        <i class="fas fa-terminal"></i>
+                                        <span>CLI</span>
+                                    </div>
+                                    <div class="skill-item" data-level="90">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>CI/CD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Attributes -->
+                    <div class="attributes-section">
+                        <h2 class="section-heading">Key Attributes</h2>
+                        <div class="attributes-grid">
+                            <div class="attribute-item">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="attribute-info">
+                                    <h3>Problem Solving</h3>
+                                    <div class="attribute-bar" data-level="95">
+                                        <div class="attribute-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="attribute-item">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="attribute-info">
+                                    <h3>Team Collaboration</h3>
+                                    <div class="attribute-bar" data-level="90">
+                                        <div class="attribute-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="attribute-item">
+                                <div class="attribute-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="attribute-info">
+                                    <h3>Fast Learning</h3>
+                                    <div class="attribute-bar" data-level="92">
+                                        <div class="attribute-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Task Management System</h3>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-content">
+                            A full-stack task management application with real-time updates and team collaboration
+                            features. The system includes user authentication, role-based access control, task
+                            assignment, due date tracking, and progress monitoring. Users can create projects, assign
+                            team members, set priorities, and receive notifications for important updates. The
+                            application features a drag-and-drop interface for easy task organization and status
+                            updates.
+                        </div>
+                        <div class="scroll-indicator">
+                            <div class="scroll-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-list">
+                            <span class="tech-item"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-item"><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                    </div>
+                    <a href="#" class="action-button">
+                        <span class="action-icon">▶</span>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Weather Oracle</h3>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-content">
+                            A weather forecasting app with dynamic backgrounds and detailed meteorological data
+                            visualization. The application provides real-time weather updates, hourly forecasts, and
+                            7-day predictions. Features include interactive radar maps, precipitation probability, wind
+                            speed and direction indicators, and severe weather alerts. Users can save multiple locations
+                            and receive customized weather notifications based on their preferences.
+                        </div>
+                        <div class="scroll-indicator">
+                            <div class="scroll-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-list">
+                            <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        </div>
+                    </div>
+                    <a href="#" class="action-button">
+                        <span class="action-icon">▶</span>
+                        View Project
+                    </a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">E-Commerce Portal</h3>
+                    </div>
+                    <div class="project-description">
+                        <div class="project-description-content">
+                            A feature-rich e-commerce platform with secure payment integration and inventory management.
+                            The platform includes product categorization, advanced search filters, user reviews and
+                            ratings, and a wishlist system. The checkout process is streamlined with multiple payment
+                            options, address management, and order tracking. Admin dashboard provides sales analytics,
+                            inventory alerts, and customer behavior insights.
+                        </div>
+                        <div class="scroll-indicator">
+                            <div class="scroll-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-list">
+                            <span class="tech-item"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-item"><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                    </div>
+                    <a href="#" class="action-button">
+                        <span class="action-icon">▶</span>
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm always interested in hearing about new projects and opportunities.
+                        Feel free to reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-container">
+                                <i class="fas fa-bookmark"></i>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-container">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2024 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <span class="footer-separator">•</span>
+                <a href="#" class="footer-link">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/typing.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+
+</html>
