@@ -163,10 +163,9 @@ body {
     .hero-text {
         font-size: 1.2rem;
         padding: 0.5rem;
-    }
-
-    .hero-text br {
-        display: none;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
 
@@ -187,6 +186,8 @@ body {
     .hero-text {
         font-size: 1rem;
         line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
 
