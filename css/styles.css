@@ -1482,3 +1482,66 @@ html {
         font-size: 1rem;
     }
 }
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    border: 2px solid var(--accent-color);
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border-color: #4CAF50;
+}
+
+.notification.error {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+    border-color: #f44336;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.75rem;
+}
+
+.notification-content i {
+    font-size: 1rem;
+}
+
+/* Form validation styles */
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: #f44336;
+}
+
+.contact-form input:focus:invalid,
+.contact-form textarea:focus:invalid {
+    box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.3);
+}
+
+/* Loading state for submit button */
+.submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.submit-button:disabled .button-text {
+    color: var(--text-color);
+}
