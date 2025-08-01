@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const typedTextSpan = document.getElementById("typed-text");
-    const words = ["Arian", "a Front-End Developer", "a Back-End Developer", "a Full-Stack Developer"];
+    const words = ["Arian", "a Full-Stack Developer", "a Computer Science Student", "a Web Developer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
